@@ -66,6 +66,9 @@ function clock() {
   const min = now.getMinutes();
   const sec = now.getSeconds();
 
+  // digital clock on dom
+  document.querySelector("#time").innerHTML = `${hr}:${min}:${sec}`;
+
   // Draw hour hand
   ctx.save();
   ctx.rotate(
